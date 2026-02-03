@@ -1,0 +1,17 @@
+---
+const { title, imgUrl, tag } = Astro.props;
+---
+<style>
+    img{
+        align-items: center;
+    }
+</style>
+
+<article class="card">
+    <img src={imgUrl} alt="">\
+	<div class="tag-row">
+		<span>{tag}</span>
+	</div>
+	<h3>{title}</h3>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quae perferendis voluptatem rerum enim aspernatur ratione quasi dolorem accusantium mollitia, excepturi sed. Facere officiis numquam est itaque reiciendis nisi non!</p>
+</article>

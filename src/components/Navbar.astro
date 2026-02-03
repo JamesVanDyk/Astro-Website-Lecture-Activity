@@ -1,4 +1,11 @@
 <style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     a {
         color: #666;
         text-decoration: none;
@@ -9,20 +16,28 @@
         display: flex;
         gap: 16px;
     }
+
+    .logo-link {
+        font-size: 20px;
+        font-weight: bold;
+        color: #212121;
+    }
 </style>
 
 
-
-<nav>
-	<ul>
-        <li>
-            <a href="/astro-website-lecture-activity">home</a>
-        </li>
-		<li>
-			<a href="/astro-website-lecture-activity/about">Go to <em>About Me</em></a>
-		</li>
-        <li>
-            <a href="#">Blog</a>
-        </li>
-	</ul>
-</nav>
+<header>
+    <a class="logo-link" aria-label="Go Home" href="/astro-website-lecture-activity">My Blog</a>
+    <nav>
+        <ul>
+            <li>
+                <a href="/astro-website-lecture-activity">Home</a>
+            </li>
+            <li>
+                <a href="/astro-website-lecture-activity/about">Go to <em>About Me</em></a>
+            </li>
+            <li>
+                <a href="/astro-website-lecture-activity/blog/recipe">Blog</a>
+            </li>
+        </ul>
+    </nav>
+</header>

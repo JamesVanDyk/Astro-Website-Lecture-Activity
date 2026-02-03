@@ -1,3 +1,6 @@
+---
+layout: ../../layouts/Layout.astro
+---
 # Recipe
 
 ## Recipe Instructions

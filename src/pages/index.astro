@@ -1,6 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
 ---
+<style>
+	.hero {
+		background: purple;
+		height: 330px;
+	}
+
+	
+</style>
 <Layout>
 	<h1>Welcome to My Blog</h1>
+	<div class="hero">
+
+	</div>
+	<section>
+		<h2>Posts</h2>
+		<Card
+			title="How to create a website with astro."
+			imgUrl="https://placehold.co/300x200"
+			tag="Technology"
+		/>
+		<Card
+			title="Recipe"
+			imgUrl="https://placehold.co/300x200"
+			tag="Cooking"
+		/>
+	</section>
 </Layout>
