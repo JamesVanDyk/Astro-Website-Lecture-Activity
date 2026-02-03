@@ -1,3 +1,7 @@
+---
+import '../styles/global.css'
+import NavBar from '../components/Navbar.astro'
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -9,7 +13,10 @@
 		<title>My Blog</title>
 	</head>
 	<body>
+		<NavBar />
 		<slot />
+		<footer style="background-color: black; height: 10px;">
+		</footer>
 	</body>
 </html>
 
